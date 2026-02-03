@@ -20,7 +20,7 @@ function menuStepCount() {
     /*LANG*/"< Back": () => menuMain(),
     /*LANG*/"per hour": () => showGraph({id:"stepsPerHour",range:"hour",field:"steps", back:menuStepCount}),
     /*LANG*/"per day": () => {
-      showGraph({id:"stepsPerHour",range:"day",field:"steps", back:menuStepCount})
+      showGraph({id:"stepsPerDay",range:"day",field:"steps", back:menuStepCount})
       drawHorizontalLine(settings.stepGoal);
     }
   };
